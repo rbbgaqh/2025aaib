@@ -1,9 +1,20 @@
-/// week01-1.cpp 瘋狂程設 兩數相加
-/// File-New empty 開新的檔案
-/// Ctrl-S 存檔程 WEEK01-1cpp 要記得加 .cpp
-/// 下周考試考這題, 不用寫藍色的「中文註解」
-#include<stdio.h>///檔名不能寫錯
-/// stido 的意思是 標準的standard input/output
-///有了 stido.h的
+// leetcode 學習計畫 大海撈針 在 haystack 找到 needle
+// 28 Find the Index of the First Occurrence in a String
+class Solution {
+public:
+    int strStr(string haystack, string needle) {
+        //
+        //
+        // i:0 sad
 
+        // i:1 sad
 
+        // i:2 sad
+
+        int H =haystack.length(), N = needle.length();
+        for(int i = 0; i <= H - N; i++){
+            if(haystack.substr(i ,N) == needle) return i;
+        }
+        return -1;
+    }
+};
